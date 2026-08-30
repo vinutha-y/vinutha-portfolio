@@ -11,8 +11,8 @@ export const projects = [
     title: 'Amrita Feast — skip the canteen queue',
     oneLiner: 'Scan your college ID, browse the menu, pay via UPI, and skip the queue with a token.',
     tags: ['END-TO-END UX', 'MOBILE-FIRST', 'FIGMA'],
-    thumb: '/images/work/img-01.jpg',
-    thumbAlt: 'Amrita Feast logo',
+    thumb: '/images/work/img-03.jpg',
+    thumbAlt: 'Amrita Feast onboarding and login screen',
     problem:
       'Students lose valuable time between classes standing in canteen queues, with no way to know wait times or order ahead.',
     approach:
