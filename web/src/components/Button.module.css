@@ -1,0 +1,45 @@
+/* Mirrors the Figma "Button" component set exactly:
+   State = Default / Hover / Active / Focus / Disabled.
+   Native pseudo-classes replace Figma's variant switching — :hover/:active/
+   :focus-visible/:disabled are the real thing, not a simulated state. */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-field);
+  font-size: var(--text-field-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-field-sm);
+  text-transform: uppercase;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-none);
+  border: 1.5px solid var(--color-ink);
+  background: var(--color-vellum);
+  color: var(--color-ink);
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+}
+
+.button:hover:not(:disabled) {
+  border-color: var(--color-redline);
+  color: var(--color-redline);
+}
+
+.button:active:not(:disabled) {
+  background: var(--color-redline);
+  border-color: var(--color-redline);
+  color: var(--color-vellum);
+}
+
+.button:focus-visible {
+  border-color: var(--color-redline);
+  outline: none;
+  box-shadow: 0 0 0 1.5px var(--color-redline);
+  border-style: dashed;
+}
+
+.button:disabled {
+  border-color: var(--color-ink-soft);
+  color: var(--color-ink-soft);
+  opacity: 0.6;
+  cursor: not-allowed;
+}

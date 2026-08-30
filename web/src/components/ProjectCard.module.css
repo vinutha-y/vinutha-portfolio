@@ -1,0 +1,77 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-ink);
+  padding: var(--space-lg);
+  text-decoration: none;
+  color: var(--color-ink);
+  background: var(--color-vellum);
+  transition: border-color 0.15s;
+}
+
+.card:hover,
+.card:focus-visible {
+  border-color: var(--color-redline);
+}
+
+.thumb {
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--color-vellum-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+  overflow: hidden;
+}
+
+.thumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--text-display-body-lg);
+  line-height: var(--leading-section);
+  letter-spacing: var(--tracking-section);
+  margin: 0;
+}
+
+.oneLiner {
+  font-family: var(--font-field);
+  font-size: var(--text-field-md);
+  line-height: var(--leading-field-md);
+  color: var(--color-ink-soft);
+  margin: 0;
+  max-width: 42ch;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+
+/* Featured card: spans the full grid row and steps up in weight, per the
+   "one larger card + smaller ones" drafting-sheet layout in the plan. */
+.card[data-featured='true'] {
+  grid-column: 1 / -1;
+}
+
+.card[data-featured='true'] .thumb {
+  aspect-ratio: 21 / 9;
+}
+
+.card[data-featured='true'] .title {
+  font-size: var(--text-display-section);
+}

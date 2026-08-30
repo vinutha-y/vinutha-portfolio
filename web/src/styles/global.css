@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..700&family=Martian+Mono:wght@300..800&display=swap');
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: var(--color-vellum);
+  color: var(--color-ink);
+  font-family: var(--font-field);
+  font-size: var(--text-field-md);
+  line-height: var(--leading-field-md);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Visible keyboard focus on every interactive element — never suppressed */
+:focus-visible {
+  outline: 2px dashed var(--color-redline);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--color-redline);
+  color: var(--color-vellum);
+}
+
+.mono {
+  font-family: var(--font-field);
+}
+
+.serif {
+  font-family: var(--font-display);
+}
+
+/* Respect reduced-motion: continuous rotation, ambient motion, and
+   scroll-jacking are disabled at the component level (see lib/motion.js
+   useReducedMotion hook) — this covers any CSS transitions/animations
+   that slip through outside JS-driven motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

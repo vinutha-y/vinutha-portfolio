@@ -1,0 +1,40 @@
+/* Mirrors the Figma "Tag" component set — same state logic as Button,
+   scaled down for tech-stack / parts-list labels. */
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-field);
+  font-size: var(--text-field-xs);
+  letter-spacing: var(--tracking-field-xs);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-none);
+  border: 1px solid var(--color-ink);
+  background: var(--color-vellum);
+  color: var(--color-ink);
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+}
+
+.tag[data-interactive='true']:hover {
+  border-color: var(--color-redline);
+  color: var(--color-redline);
+}
+
+.tag[data-active='true'] {
+  background: var(--color-redline);
+  border-color: var(--color-redline);
+  color: var(--color-vellum);
+}
+
+.tag[data-interactive='true']:focus-visible {
+  outline: none;
+  border-color: var(--color-redline);
+  border-style: dashed;
+  box-shadow: 0 0 0 1px var(--color-redline);
+}
+
+.tag[data-disabled='true'] {
+  border-color: var(--color-ink-soft);
+  color: var(--color-ink-soft);
+  opacity: 0.6;
+}

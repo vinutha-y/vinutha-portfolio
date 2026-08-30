@@ -1,0 +1,29 @@
+.diagram {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--space-sm);
+  width: 100%;
+  max-width: 420px;
+}
+
+.layer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.bar {
+  flex: 1;
+  height: 40px;
+  background: color-mix(in srgb, var(--color-blueprint) 16%, var(--color-vellum));
+  border: 1.5px solid var(--color-ink);
+}
+
+.label {
+  font-family: var(--font-field);
+  font-size: var(--text-field-xs);
+  letter-spacing: var(--tracking-field-xs);
+  color: var(--color-ink-soft);
+  white-space: nowrap;
+  width: 76px;
+}

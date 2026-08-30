@@ -1,0 +1,131 @@
+.intro {
+  padding: var(--space-3xl) 0 var(--space-2xl);
+  max-width: 680px;
+}
+
+.eyebrow {
+  color: var(--color-redline);
+  font-size: var(--text-field-sm);
+  letter-spacing: var(--tracking-field-sm);
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--text-display-hero);
+  line-height: var(--leading-hero);
+  letter-spacing: var(--tracking-hero);
+  max-width: 16ch;
+  text-wrap: balance;
+  margin: 0 0 var(--space-lg);
+}
+
+.bio {
+  font-family: var(--font-display);
+  font-size: var(--text-display-body);
+  line-height: var(--leading-body);
+  color: var(--color-ink-soft);
+  max-width: 56ch;
+  margin: 0;
+}
+
+.metaWrap {
+  padding: var(--space-2xl) 0;
+}
+
+/* ---- Parts list (skills) ---- */
+
+.partsList {
+  border: 1.5px solid var(--color-ink);
+  max-width: 760px;
+}
+
+.partsRow {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--color-vellum-line);
+  align-items: start;
+}
+
+.partsRow:first-child {
+  border-top: none;
+}
+
+.partsLabel {
+  font-size: var(--text-field-sm);
+  letter-spacing: var(--tracking-field-sm);
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+  padding-top: var(--space-xs);
+}
+
+.partsTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 640px) {
+  .partsRow {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+}
+
+/* ---- Revision history table ---- */
+
+.revTable {
+  border: 1.5px solid var(--color-ink);
+  max-width: 760px;
+}
+
+.revHeadRow,
+.revRow {
+  display: grid;
+  grid-template-columns: 64px 110px 1fr;
+  gap: var(--space-md);
+}
+
+.revHeadRow {
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-vellum-line);
+}
+
+.revHeadCell {
+  font-size: var(--text-field-xs);
+  letter-spacing: var(--tracking-field-xs);
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.revRow {
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--color-vellum-line);
+  font-family: var(--font-field);
+  font-size: var(--text-field-sm);
+  align-items: baseline;
+}
+
+.revRev {
+  color: var(--color-redline);
+  font-weight: 600;
+}
+
+.revDate {
+  color: var(--color-ink-soft);
+}
+
+@media (max-width: 640px) {
+  .revHeadRow,
+  .revRow {
+    grid-template-columns: 40px 88px 1fr;
+    gap: var(--space-sm);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}

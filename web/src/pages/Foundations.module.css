@@ -1,0 +1,94 @@
+.foundationsPreview {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-3xl) var(--space-xl);
+}
+
+.eyebrow {
+  color: var(--color-redline);
+  font-size: var(--text-field-sm);
+  letter-spacing: var(--tracking-field-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.sectionLabel {
+  color: var(--color-ink-soft);
+  font-size: var(--text-field-sm);
+  letter-spacing: var(--tracking-field-sm);
+  margin-bottom: var(--space-md);
+  margin-top: var(--space-2xl);
+  display: block;
+}
+
+.dim {
+  color: var(--color-ink-soft);
+}
+
+.swatchRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  border: 1.5px solid var(--color-ink);
+}
+
+.swatch {
+  border-left: 1px solid var(--color-ink);
+  padding: var(--space-md);
+}
+.swatch:first-child {
+  border-left: none;
+}
+
+.chip {
+  height: 56px;
+  margin-bottom: var(--space-sm);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.desc {
+  font-size: var(--text-field-xs);
+  margin-top: var(--space-xs);
+}
+
+.typeTable {
+  border: 1.5px solid var(--color-ink);
+}
+
+.typeRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  padding: var(--space-md) var(--space-lg);
+  border-top: 1px solid var(--color-vellum-line);
+}
+.typeRow:first-child {
+  border-top: none;
+}
+
+.typeRow .label {
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.spacingRows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.spacingRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.bar {
+  height: 10px;
+  background: var(--color-blueprint);
+  display: block;
+}
+
+.componentRow {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}

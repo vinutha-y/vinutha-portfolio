@@ -1,0 +1,88 @@
+.intro {
+  padding: var(--space-2xl) 0;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--text-display-hero);
+  line-height: var(--leading-hero);
+  letter-spacing: var(--tracking-hero);
+  max-width: 20ch;
+  text-wrap: balance;
+  margin: var(--space-xl) 0 var(--space-lg);
+}
+
+.dek {
+  font-family: var(--font-display);
+  font-size: var(--text-display-body);
+  line-height: var(--leading-body);
+  color: var(--color-ink-soft);
+  max-width: 52ch;
+  margin: 0 0 var(--space-xl);
+}
+
+.body {
+  font-family: var(--font-display);
+  font-size: var(--text-display-body);
+  line-height: var(--leading-body);
+  color: var(--color-ink);
+  max-width: 62ch;
+  margin: 0;
+}
+
+/* Tech stack rendered as a parts list — a bordered row per tag, label
+   (the Tag) left, value (role note) right, like a spec-sheet BOM row. */
+.partsList {
+  margin-top: var(--space-xl);
+  max-width: 640px;
+  border-top: 1px solid var(--color-ink);
+}
+
+.partsLabel {
+  font-size: var(--text-field-sm);
+  letter-spacing: var(--tracking-field-sm);
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+.partsRow {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-vellum-line);
+}
+
+.partsIndex {
+  font-size: var(--text-field-xs);
+  color: var(--color-ink-soft);
+}
+
+.figure {
+  margin: var(--space-xl) 0 0;
+  max-width: 640px;
+}
+
+.figureBox {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--color-vellum);
+  border: 1px solid var(--color-vellum-line);
+}
+
+.figureCaption {
+  font-size: var(--text-field-sm);
+  color: var(--color-ink-soft);
+  letter-spacing: var(--tracking-field-sm);
+  margin-top: var(--space-sm);
+}
+
+.footerNav {
+  padding: var(--space-2xl) 0 var(--space-3xl);
+}

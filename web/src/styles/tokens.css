@@ -1,0 +1,72 @@
+/*
+  Design tokens — pulled directly from the validated Figma Foundations work
+  (Concept B: "The Drafting Table"). Colors, spacing, radius, and the desktop
+  type scale below are the exact values built and screenshotted in Figma —
+  not eyeballed. See README.md for what's sourced vs. extended.
+*/
+
+:root {
+  /* ---- Color (Figma "Color" collection, mode "Value") ---- */
+  --color-vellum: #EEF0EA;       /* base surface */
+  --color-vellum-line: #D6DBD0;  /* ruled grid / dividers */
+  --color-ink: #17222E;          /* linework, primary text */
+  --color-ink-soft: #59636C;     /* secondary text, labels */
+  --color-blueprint: #2F5C96;    /* structural fill (diagrams, planes) */
+  --color-redline: #D6301F;      /* the one accent — hover/active/CTA */
+
+  /* ---- Spacing (Figma "Spacing" collection) ---- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+
+  /* ---- Radius (Figma "Radius" collection) — deliberately near-zero ---- */
+  --radius-none: 0px;
+  --radius-sm: 2px;
+
+  /* ---- Type families ---- */
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-field: 'Martian Mono', 'Consolas', 'SFMono-Regular', monospace;
+
+  /*
+    Type scale — desktop (1440) values match the Figma text styles exactly.
+    Figma only defined a single desktop scale (no mobile frames were built),
+    so these are expressed as fluid clamp()s that resolve to the exact
+    Figma size at >=1440px and scale down proportionally toward 390px.
+    This down-scaling ratio is NOT from Figma — it's the smallest reasonable
+    extension of the existing scale, flagged here and in the phase notes.
+  */
+  --text-display-hero: clamp(2.25rem, 1.4rem + 3.6vw, 3.5rem);   /* 56px @1440 */
+  --text-display-section: clamp(1.5rem, 1.15rem + 1.5vw, 1.875rem); /* 30px @1440 */
+  --text-display-body-lg: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);  /* 20px @1440 */
+  --text-display-body: clamp(1rem, 0.92rem + 0.35vw, 1.0625rem);   /* 17px @1440 */
+  --text-field-lg: 1rem;        /* 16px — mono, not fluid-scaled */
+  --text-field-md: 0.8125rem;   /* 13px */
+  --text-field-sm: 0.6875rem;   /* 11px */
+  --text-field-xs: 0.625rem;    /* 10px */
+
+  --leading-hero: 1.06;
+  --leading-section: 1.15;
+  --leading-body-lg: 1.5;
+  --leading-body: 1.6;
+  --leading-field-lg: 1.4;
+  --leading-field-md: 1.5;
+  --leading-field-sm: 1.4;
+  --leading-field-xs: 1.4;
+
+  --tracking-hero: -0.01em;
+  --tracking-section: -0.005em;
+  --tracking-field-md: 0.01em;
+  --tracking-field-sm: 0.08em;
+  --tracking-field-xs: 0.04em;
+
+  /* ---- Layout ---- */
+  --frame-desktop: 1440px;
+  --frame-mobile: 390px;
+  --content-max: 1200px;
+  --border-hairline: 1px solid var(--color-ink);
+  --border-hairline-soft: 1px solid var(--color-vellum-line);
+}
