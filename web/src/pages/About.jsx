@@ -34,7 +34,7 @@ export default function About() {
         <SheetMeta
           cells={[
             ['Sheet', '04 of 05 — About'],
-            ['Title', 'Vinutha'],
+            ['Title', 'Vinutha Y'],
             ['Scale', 'n.t.s.'],
             ['Rev', 'B'],
           ]}

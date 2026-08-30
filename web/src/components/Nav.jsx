@@ -11,7 +11,7 @@ export function Nav() {
   return (
     <header className={styles.nav}>
       <NavLink to="/" className={styles.mark}>
-        Vinutha<span>.</span>
+        Vinutha Y<span>.</span>
       </NavLink>
       <nav className={styles.links}>
         {LINKS.map(({ to, label }) => (

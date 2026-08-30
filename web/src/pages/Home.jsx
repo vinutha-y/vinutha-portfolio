@@ -54,7 +54,7 @@ export default function Home() {
         <SheetMeta
           cells={[
             ['Sheet', '01 of 05 — Home'],
-            ['Title', 'Vinutha'],
+            ['Title', 'Vinutha Y'],
             ['Scale', 'n.t.s.'],
             ['Rev', 'B'],
           ]}

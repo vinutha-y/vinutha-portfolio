@@ -7,7 +7,7 @@ export function PageShell({ children }) {
       <Nav />
       <div className={styles.wrap}>{children}</div>
       <footer className={`mono ${styles.footer}`}>
-        <span>© {new Date().getFullYear()} Vinutha</span>
+        <span>© {new Date().getFullYear()} Vinutha Y</span>
         <span>n.t.s. — Rev. B</span>
       </footer>
     </>

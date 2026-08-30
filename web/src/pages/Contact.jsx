@@ -33,7 +33,7 @@ export default function Contact() {
         <SheetMeta
           cells={[
             ['Sheet', '05 of 05 — Contact'],
-            ['Title', 'Vinutha'],
+            ['Title', 'Vinutha Y'],
             ['Scale', 'n.t.s.'],
             ['Rev', 'B'],
           ]}
